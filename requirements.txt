@@ -3,4 +3,5 @@ Pillow
 gunicorn
 Flask
 Werkzeug
+onnxruntime
 
