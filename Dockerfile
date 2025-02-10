@@ -21,7 +21,7 @@
 
 # Stage 1: Build Stage
 # Use a larger image for building the dependencies
-FROM python:3.9-alpine as build-stage
+FROM python:3.10-alpine as build-stage
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -38,7 +38,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Final Runtime Stage
 # Use the official Python Alpine image (much smaller than the build stage)
-FROM python:3.9-alpine as runtime-stage
+FROM python:3.10-alpine as runtime-stage
 
 # Set the working directory inside the container
 WORKDIR /app
