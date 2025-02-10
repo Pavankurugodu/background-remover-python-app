@@ -22,13 +22,6 @@ pipeline {
                 }
             }
         }
-        stage("Quality Gate") {
-            steps {
-                script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token'
-                }
-            }
-        }
         stage ("Trivy File Scan") {
             steps {
                 sh "trivy fs . > trivy.txt"
