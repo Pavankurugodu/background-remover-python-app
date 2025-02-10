@@ -11,7 +11,7 @@ pipeline {
         }
         stage ("Git checkout") {
             steps {
-                git branch: 'main', url: 'https://github.com/Pavankurugodu/background-remover-python-app.git'
+                git branch: 'master', url: 'https://github.com/Pavankurugodu/background-remover-python-app.git'
             }
         }
         stage("SonarQube Analysis") {
