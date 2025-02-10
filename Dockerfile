@@ -28,7 +28,7 @@ WORKDIR /app
 
 # Install dependencies for building wheels (required by some Python packages) and cleanup after install
 RUN apk update && \
-    apk add --no-cache gcc musl-dev libffi-dev
+    apk add --no-cache gcc g++ musl-dev libffi-dev make libtool
 
 # Copy the requirements.txt file and install the dependencies
 COPY requirements.txt ./
