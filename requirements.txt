@@ -3,5 +3,5 @@ Pillow
 gunicorn
 Flask
 Werkzeug
-onnxruntime=1.20.0
+onnxruntime==1.20.0
 
