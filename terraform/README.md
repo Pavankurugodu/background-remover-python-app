@@ -56,7 +56,7 @@ Apply
 terraform apply -var-file="workspaces/dev.tfvars"
 
 How Each Module Works & How to Run Them
-1️⃣ VPC Module
+VPC Module
 Purpose
 
 Creates:
